@@ -4,6 +4,8 @@ interface Props {
   pageDescription: string;
 }
 
+import Footer from "../components/Footer.astro";
+
 const { pageTitle, pageDescription } = Astro.props;
 ---
 
@@ -17,8 +19,11 @@ const { pageTitle, pageDescription } = Astro.props;
     <meta name="description" content={pageDescription} />
     <title>IE Francisco Bolognesi | {pageTitle}</title>
   </head>
-  <body class="bg-blue-900 text-white m-5">
-    <slot />
+  <body>
+    <section class="bg-blue-900 text-white p-5">
+      <slot />
+    </section>
+    <Footer />
 
     <!-- <style>
       body {
