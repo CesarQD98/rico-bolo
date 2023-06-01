@@ -17,14 +17,14 @@ const { pageTitle, pageDescription } = Astro.props;
     <meta name="description" content={pageDescription} />
     <title>IE Francisco Bolognesi | {pageTitle}</title>
   </head>
-  <body>
+  <body class="bg-blue-900 text-white m-5">
     <slot />
 
-    <style>
+    <!-- <style>
       body {
-        background: #202020;
+        background: #3452ec;
         color: white;
       }
-    </style>
+    </style> -->
   </body>
 </html>
