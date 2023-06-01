@@ -1,15 +1,13 @@
 ---
+import BasicLayout from "../layouts/BasicLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<BasicLayout
+  pageTitle="Inicio"
+  pageDescription="Website oficial de la Institución Educativa Coronel Francisco Bolognesi Cervantes."
+>
+  <h1 class="text-3xl font-bold">Página de inicio</h1>
+  <p class="my-2">
+    Bienvenido a la página oficial del colegio Francisco Bolognesi
+  </p>
+</BasicLayout>
