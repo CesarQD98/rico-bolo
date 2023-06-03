@@ -1,5 +1,6 @@
 ---
 import BasicLayout from "../layouts/BasicLayout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <BasicLayout
@@ -13,4 +14,23 @@ import BasicLayout from "../layouts/BasicLayout.astro";
     accusantium, dolorum quasi cumque eligendi illum minima adipisci obcaecati!
     Cum.
   </p>
+
+  <div class="flex flex-wrap justify-around gap-5 py-5">
+    <Card
+      title="Misión"
+      description="Somos una institución acogedora de educación básica regular que forma  ciudadanos  con iniciativa, criticidad y creatividad,  que respeta y potencia las características individuales de nuestros y nuestras estudiantes, desarrollando capacidades, valores y conocimientos científicos - tecnológicos que contribuyan al bienestar de la sociedad y la conservación del medio ambiente para garantizar  una convivencia tolerante, democrática  e intercultural."
+    />
+    <Card
+      title="Visión"
+      description="Ser una institución educativa que brinde un servicio integral, con estándares de calidad y acreditación; que forme estudiantes democráticos, críticos, competentes y emprendedores; reconocidos en el ámbito distrital, regional y nacional como institución líder que promueve las buenas prácticas y la innovación educativa; asumiendo los enfoques  ambiental, inclusivo e intercultural y teniendo como marco los valores de honor, disciplina y superación"
+    />
+    <Card
+      title="Historia"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nostrum?"
+    />
+    <Card
+      title="Plana Docente"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, nostrum?"
+    />
+  </div>
 </BasicLayout>
