@@ -20,9 +20,9 @@ const { pageTitle, pageDescription } = Astro.props;
     <meta name="description" content={pageDescription} />
     <title>IE Francisco Bolognesi | {pageTitle}</title>
   </head>
-  <body>
+  <body class="flex h-screen flex-col">
     <Header />
-    <section class="bg-blue-900 text-white p-5 h-full">
+    <section class="bg-blue-900 text-white p-5 flex-1">
       <slot />
     </section>
     <Footer />
